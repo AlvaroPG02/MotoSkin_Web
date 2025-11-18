@@ -8,9 +8,9 @@
     --background-color: #121212;
     --text-primary: #F5F5F5;
     --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
+    --text-muted: #abb1b9;
     --border: rgba(255, 255, 255, 0.1);
-    --card-bg: #1e293b;
+    --card-bg: rgba(255, 255, 255, 0.1);
     --shadow: rgba(0, 0, 0, 0.3);
     --input-bg: #1e293b;
     --hsla-example: hsla(210, 100%, 56%, 1);
@@ -121,6 +121,7 @@ main > section:nth-child(1) {
   p {
     margin: 1rem auto 2rem auto;
     font-size: 1.35rem;
+    width: min(70%, 700px);
     color: var(--text-secondary);
   }
 
@@ -233,6 +234,7 @@ footer {
   border-top: 1px solid var(--border);
   text-align: center;
   padding: 16px;
+  margin-top: 16px;
 
   small {
     color: var(--text-muted);
@@ -241,3 +243,31 @@ footer {
 
 }
 
+article{
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 3px var(--shadow);
+  margin-bottom: 16px;
+  
+  svg{
+    color: var(--primary-light);
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--text-primary);
+    border-radius: 100%;
+    padding: 10px;
+    overflow: visible;
+  }
+}
+
+p{
+  color: var(--text-muted);
+}
+
+main > section:nth-child(2) footer {
+  display: grid;
+  gap: 30px
+} 
